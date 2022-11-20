@@ -1,0 +1,99 @@
+@import '../AllStyles/GlobalStyles.scss';
+@import '../AllStyles/GlobalBreakPoints.scss';
+
+.navbarframe-main {
+	width: 65%;
+	height: 100%;
+
+	margin-left: 35%;
+	background-color:bisque;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	padding-left: 16px;
+	//justify-items: center;//Aligns all the flex items vertically
+}
+
+.navbarframe-flex-item {
+	flex: 1;
+	border: 1px solid palevioletred;
+}
+
+.navbarframe-button-container {
+	align-self: center;
+	width: 98%;
+}
+
+//Common properties to both the Login and Register buttons
+.navbarframe-button-container button {
+	height: 60px;//calc($NavBarHeightDesktop - 24px);
+
+	width: 98%;
+	margin-left: 1%;
+	border-radius: 12px;
+
+	font-size: 1.2em;
+	font-weight: $FontWeightLight;
+}
+
+.navbarframe-login-button {
+	color:darkslategrey;
+	justify-self: center;
+}
+
+.navbarframe-register-button {
+	color: cornflowerblue;
+}
+
+.navbarframe-flex-item-void-element {
+	display: none;
+}
+
+.navbarframe-snap-logo {
+	display: none;
+}
+
+@media only screen and (min-width:$DesktopCondensed) {
+	.navbarframe-main {
+		width: 100%;
+		margin-left: 0%;
+	
+		flex-direction: row;
+		height: $NavBarHeightDesktop;
+		border-radius: 8px 8px 0px 0px;
+		align-items: center;//Aligns all the flex items vertically
+	}
+
+	.navbarframe-flex-item {
+		text-align: center;//Aligns all the <p>'s inside the item to center horizontally
+		border: 1px solid cadetblue;
+	}
+
+	.navbarframe-flex-item-void-element {
+		display: unset;
+	}
+
+	.navbarframe-snap-logo {
+		display: unset;
+	}
+
+	.navbarframe-button-container {
+		display: flex;
+	}
+
+	.navbarframe-button-container button {
+		flex: 1;
+		height: calc($NavBarHeightDesktop - 24px);
+
+		margin-right: 24px;
+		border-radius: 12px;
+	}
+}
+
+@media only screen and (min-width:$DesktopMedium) {
+}
+
+@media only screen and (min-width:$DesktopMaximum) {
+}

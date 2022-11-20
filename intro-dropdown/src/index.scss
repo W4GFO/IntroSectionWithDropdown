@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Epilogue');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size:18px;
+  font-family: 'Epilogue', 'Roboto', 'Segoe UI', 'Oxygen', -apple-system, BlinkMacSystemFont, 
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#root {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  background-color:lightskyblue;
+}

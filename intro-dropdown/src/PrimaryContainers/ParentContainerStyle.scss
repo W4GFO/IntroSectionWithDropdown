@@ -1,0 +1,25 @@
+@import '../AllStyles/GlobalStyles.scss';
+@import '../AllStyles/GlobalBreakPoints.scss';
+
+main {
+	width: 100%;
+	height: 100%;
+
+	background-color: $AlmostWhite
+}
+
+@media only screen and (min-width:$DesktopCondensed) {
+	main {
+		width: 84%;
+		height: 90%;
+
+		border-radius: 8px;
+		box-shadow: 10px 10px 24px 2px rgba($color: $MediumGray, $alpha: 0.4)   ;
+	}
+}
+
+@media only screen and (min-width:$DesktopMedium) {
+}
+
+@media only screen and (min-width:$DesktopMaximum) {
+}

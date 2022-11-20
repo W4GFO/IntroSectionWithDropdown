@@ -1,0 +1,33 @@
+@import '../AllStyles/GlobalStyles.scss';
+@import '../AllStyles//GlobalBreakPoints.scss';
+
+.menubaritem-top-level-container {
+	
+}
+
+.menubaritem-top-level-menu {
+	display: flex;
+	color:$AlmostBlack;
+	font-weight:$FontWeightLight;
+}
+
+.menubaritem-top-level-menu-text {
+	flex: 4;
+}
+
+.menubaritem-top-level-menu-icon {
+	flex: 1;
+	font-size: 0.78em;
+}
+
+@media only screen and (min-width:$DesktopCondensed) {
+	
+}
+
+@media only screen and (min-width:$DesktopMedium) {
+	
+}
+
+@media only screen and (min-width:$DesktopMaximum) {
+	
+}
